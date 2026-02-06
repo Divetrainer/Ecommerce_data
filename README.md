@@ -10,7 +10,7 @@ will utilize cli tools to perform sqlite functions and also read up on how they 
 goal is to touch* this project twice a week to make sure I am adding/removing/creating relational db that showcase meaningful data from the data set chosen
 
 general goals
-
-[] create a table with data showcasing sales performance metrics by item sold
-[] python script to pull data and manipulate it outside of sqlite3
+- [x] create github(gotta take some victories where you can)
+- [] create a table with data showcasing sales performance metrics by item sold
+- [] python script to pull data and manipulate it outside of sqlite3
 
