@@ -3,7 +3,7 @@ sqlite/python project to better understand sql and python scripting
 
 plan is to essentially utilize this project to learn how to implement CRUD on a large data set. 
 
-utilizing a [CSV](https://www.kaggle.com/datasets/sidramazam/e-commerce-sales-performance-analysis) from [kaggle](kaggle.com/divetrainer)
+utilizing a [CSV](https://www.kaggle.com/datasets/sidramazam/e-commerce-sales-performance-analysis) from [kaggle](https://www.kaggle.com/divetrainer)
 
 will utilize cli tools to perform sqlite functions and also read up on how they factor into ADF pipelines for more understanding of an enterprise approach
 
