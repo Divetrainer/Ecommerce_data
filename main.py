@@ -1,5 +1,6 @@
 import pandas as pd
-import sqlite3
+import sqlite3, datetime
+
 
 def main():
 
@@ -23,13 +24,24 @@ def main():
 		WHERE sales > 1000
 		AND quantity > 8
 		AND ecommerce.profit > 100
-		ORDER BY quantity DESC;
+		ORDER BY quantity DESC, "Product Name" DESC;
 	"""
 
-	for row in cur.execute(query):
-		print(row)
+	#populate a file that has the database query ran
+	date = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+	filename = f"{date} log.txt"
+	with open(filename, mode="x") as log:
+		pass
 
+	#print out details for query to the console
+	for row in cur.execute(query):
+		datafile = open(filename ,"a")
+		datafile.write(str(row))
+		datafile.write("\n")
+
+	datafile.close()
 	conn.close()
 
 if __name__ == "__main__":
     main()
+
