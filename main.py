@@ -29,7 +29,7 @@ def main():
 
 	#populate a file that has the database query ran
 	date = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-	filename = f"{date} log.txt"
+	filename = f"{date} log.csv"
 	with open(filename, mode="x") as log:
 		pass
 

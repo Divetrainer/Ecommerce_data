@@ -12,5 +12,5 @@ goal is to touch* this project twice a week to make sure I am adding/removing/cr
 general goals
 - [x] create github(gotta take some victories where you can)
 - [] create a table with data showcasing sales performance metrics by item sold
-- [] python script to pull data and manipulate it outside of sqlite3
+- [x] python script to pull data and manipulate it outside of sqlite3
 
