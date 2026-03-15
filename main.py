@@ -26,18 +26,15 @@ query = """
 """
 
 #populate a file that has the database query ran
-date = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-filename = f"{date} log.csv"
-with open(filename, mode="x") as log:
-	pass
+date = datetime.datetime.now().strftime("%m-%d_%H-%M-%S")
+filename = f"{date} report.csv"
 
-#print out details for query to the console
-for row in cur.execute(query):
-	datafile = open(filename ,"a")
-	datafile.write(str(row))
-	datafile.write("\n")
+#mode w creates and allows writing so you can combine the with and for loop
+with open(filename, mode="w") as log:
+	for row in cur.execute(query):
+		log.write(str(row))
+		log.write("\n")
 
-datafile.close()
 conn.close()
 
 
